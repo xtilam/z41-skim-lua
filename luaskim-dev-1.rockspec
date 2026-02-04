@@ -1,7 +1,7 @@
 package = "luaskim"
 version = "dev-1"
 source = {
-	url = "git://github.com/xtilam/luaskim",
+	url = "git://github.com/xtilam/z41-skim-lua",
 }
 description = {
 	summary = "Skim binding for Lua",
