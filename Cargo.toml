@@ -1,0 +1,19 @@
+[package]
+name = "luaskim"
+edition = "2024"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+skim = "1.11.1"
+mlua = { version = "0.9.9", features = ["module", "macros"], optional = true }
+serde = { version = "1.0", features = ["derive"] }
+crossterm = "0.29.0"
+strip-ansi-escapes = "0.2.1"
+
+[features]
+default = ["use-lua52"]
+use-lua52 = ["mlua/lua52"]
+use-luajit = ["mlua/luajit"]
